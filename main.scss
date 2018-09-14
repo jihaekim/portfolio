@@ -1,0 +1,308 @@
+
+body{
+    margin:0;
+    background-color: #F3EFE0;
+    font-family: 'Roboto', sans-serif;
+}
+h1{
+    font-size: 1.8em;
+}
+
+#navbar-container{
+     background-color: #F3EFE0;
+     height: 65px;
+     position: fixed;
+     width: 100%;
+     top: 0;
+     z-index:1;
+ 
+    #navbar-div{
+        position: relative;
+        top: 25px;
+        margin-left: 900px;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .links{
+        text-decoration: none;
+        color:black;
+        font-weight: 900;
+    }
+}
+
+
+#first-div{
+    background-color: #F3EFE0;
+    height:875px;
+
+    #introduce{
+        position: relative;
+        top: 38%;
+        text-align: center; 
+    }
+
+    #my-name{
+        font-size: 4.5em;
+        letter-spacing: 3px;
+        opacity: 0;
+    }
+    #bio{
+        font-size: 1.5em;
+        margin-top: 3%;
+        opacity: 0;
+   
+    }
+}
+#first-bold{
+    font-weight:700;
+}
+#arrow{
+    position: relative;
+    top: 65%;
+    text-align: center;
+    font-size: 2em;
+}
+
+
+
+#second-div{
+    height:750px;
+}
+
+#abt-div{
+      position: relative;
+      text-align: center;  
+
+    #about{
+        opacity:0;
+    }
+}
+
+#icon-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 6%;
+    opacity: 0;
+    width: 70%;
+    margin: 5% auto;
+}
+
+#text-container{
+    display: flex;
+    width: 54%;
+    margin: 0 auto;
+    justify-content: space-between;
+
+    #img-div{
+        width:100px;
+    }
+    #my-img{
+        width:100%;
+        border-radius: 15px;
+        border:10px double white;
+        opacity: 0;
+    }
+
+}
+
+
+#description{
+    text-align: justify;
+    width: 75%;
+    // opacity: 0;
+
+ h3{
+    margin-top:0;
+    font-size: 1.6em;
+    }
+}
+
+
+
+#head, #first-par, #second-par{
+    line-height: 1.4;
+    opacity: 0;
+
+}
+
+
+
+#third-div{
+    height:340px;
+
+    hr{
+        background-color: #DAA520;
+        position: relative;
+        top: 17%;
+        height: 10px;
+        border: none;
+        opacity: 0;
+    }
+
+}
+
+
+#skills-div{
+    text-align: center;
+    opacity: 0;
+}
+
+
+#skill-logos{
+    display: flex;
+    justify-content: space-evenly;
+    opacity: 0;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5%;
+        div{
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 1.17em;
+        }
+        h3{
+            font-size: 20px;
+        }
+}
+    
+
+.skill-icons{
+    width: 50px;
+}
+
+#fourth-div{
+    height:500px;   
+}
+
+
+#profile-div{
+    position: relative;
+    top: 10%;
+    
+    #portfolio{
+        text-align: center;
+        margin-bottom: 4%;
+        opacity: 0;
+    }
+    
+}
+
+#web-pics{
+    display: flex;
+    margin: 6% 8% 0 8%;
+    flex-direction: row;
+
+    div{
+        padding: 0 .5% .25% .5%;
+    }
+
+    #firstrow{
+        display: flex;
+        justify-content: center;
+        opacity: 0;
+    }
+
+}
+
+
+#fifth-div{
+    height: 900px;
+}
+
+#contact-outer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top:9%;
+}
+
+#contact-me{
+    text-align: center;
+    margin: 5% 0 5% 0;
+    opacity: 0;
+}
+
+.contact-logo{
+    width:45px;
+    height:45px;
+}
+
+#contact-div{
+    display:flex;
+    flex-direction: column;
+    width: 300px;
+
+    button{
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    
+    div{
+        display:flex;
+        padding:5%;
+        align-items: center;
+
+        a{
+            text-decoration: none;
+            color:black;
+        }
+    }
+}
+
+#first-contact,#second-contact,#third-contact{
+    opacity: 0;
+}
+
+
+.logo-shadow:hover{
+    // box-shadow: 10px 10px 5px grey;
+    border: 3px solid black;
+}
+
+.icons{
+    width:50px;
+}
+
+.rotateIn{
+    animation: rotateIn 1.3s forwards;
+}
+
+.rotateInBio{
+    animation: rotateIn 1.3s .33s forwards;
+}
+
+.slideUp{
+    animation: slideUp .5s forwards;
+}
+
+
+@keyframes rotateIn{
+    from {
+        transform: rotateX(80deg);
+        opacity: 0;
+    }
+    to {
+        transform: rotateX(0deg);
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp{
+    0% {
+        opacity:0;
+        transform:  translate(0px,40px)  ;
+    }
+    100% {
+        opacity:1;
+        transform:  translate(0px,0px)  ;
+    }
+}
+.project-div{
+    width:600px;
+}
+.project-images{
+    width:100%;
+    height:100%;
+}
